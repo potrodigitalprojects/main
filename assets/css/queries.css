@@ -1,0 +1,106 @@
+@media screen and (min-width: 800px) {
+
+    .container__btn-bars {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: fit-content;
+        height: auto;
+        transform: translateX(0);
+        background: transparent;
+    }
+
+    .container__links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .links__item a {
+        padding: 10px 15px;
+        font-size: 1.3em;
+        border: none;
+        position: relative;
+        /* border-radius: 7px; */
+    }
+
+    .links__item .navbar__link3 {
+        border-bottom: none;
+    }
+
+    .links__item a:hover {
+        background: none;
+        color: #b000b6;
+    }
+
+    .links__item a::before {
+        content: '';
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-left: none;
+        display: flex;
+        transition: background-color .3s ease, width .3s ease;
+    }
+
+    .links__item a:hover::before {
+        background-color: #b000b6;
+        width: 100%;
+    }
+
+    /* Main */
+
+    .container__we-info {
+        width: 65%;
+        margin: 50px auto;
+        margin-bottom: 0;
+    }
+
+    .trees, .flowers {
+        padding: 0 40px;
+        padding-bottom: 50px;
+        background-image: linear-gradient(#2225, #2225), url(../img/normal/bg_articles.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .trees {
+        padding-top: 60px;
+    }
+
+    .card__tree, .card__flower {
+        width: 45%;
+        background-color: #e4e4e4;
+        border-radius: 10px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .tree__title, .flower__title {
+        background-color: #eeeeee;
+        padding: 20px;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .container__left {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    /* Social Media */
+
+    .social_media {
+        min-height: fit-content;
+        padding-bottom: 100px;
+    }
+}

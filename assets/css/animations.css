@@ -1,0 +1,156 @@
+/* Header */
+
+@keyframes header {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: #222a;
+        color: #fff;
+    }
+}
+
+
+/* Bars */
+
+
+@keyframes bar-menu1 {
+    from {
+        transform: rotateX(0) translateY(0);
+    }
+
+    to {
+        transform: rotateZ(50deg) translateY(12px);
+    }
+}
+
+@keyframes bar-menu2 {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+@keyframes bar-menu3 {
+    from {
+        transform: rotateX(0) translateY(0);
+    }
+
+    to {
+        transform: rotateZ(-50deg) translateY(-12px);
+    }
+}
+
+
+@keyframes bar-change-menu1 {
+    from {
+        transform: rotateZ(50deg) translateY(12px);
+    }
+
+    to {
+        transform: rotateX(0) translateY(0);
+    }
+}
+
+@keyframes bar-change-menu2 {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bar-change-menu3 {
+    from {
+        transform: rotateZ(-50deg) translateY(-12px);
+    }
+
+    to {
+        transform: rotateX(0) translateY(0);
+    }
+}
+
+@keyframes navbar {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navbar-change {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes before-link-min {
+    from {
+        transform: translate(0, 200px);
+    }
+
+    to {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes arrow-bottom {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(100px);
+        opacity: .4;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Sub-header */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Cards */
+
+
+@keyframes card {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
